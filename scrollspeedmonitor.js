@@ -9,7 +9,7 @@ var ScrollSpeedMonitor = (function()
         $(window).scroll(function(e)
         {
             var scrollTop = $(this).scrollTop();
-            didScroll(e.timeStamp, scrollTop);
+            didScroll(new Date().getTime(), scrollTop);
         });
     }
 
